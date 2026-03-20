@@ -41,6 +41,12 @@ body {
       }
     }
 
+    &.is-opened {
+      .hubble-pd-expand__content {
+        display: block;
+      }
+    }
+
     @media screen and (min-width: 768px) {
       padding: 0 88px;
     }
@@ -106,5 +112,10 @@ body {
       height: 22px !important;
       right: 7px !important;
     } 
+  }
+
+  .hubble-pd-expand__content {
+    display: none;
+    padding: 0 0 20px 0;
   }
 }
