@@ -1,0 +1,110 @@
+// Global styles from Prod, shouldn't need to build with this test. 
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'SamsungOne', Arial, sans-serif;
+}
+
+.hidden {
+  display: block;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+#downBoxHtml {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px 0;
+
+  .hubble-pd-expand {
+    position: relative;
+    max-width: 1440px;
+    padding: 0;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.32;
+
+    &:last-child {
+      .hubble-pd-expand__opener {
+        border-bottom: 1px solid #eee;
+
+        @media screen and (min-width: 768px) {
+          border-top: 2px solid #e9e9e9;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 0 88px;
+    }
+  }
+
+  .hubble-pd-expand__opener {
+    padding: 6.94444444vw 17.77777778vw 6.94444444vw 6.66666667vw !important;
+    border-top: 1px solid #eee !important;
+    display: block;
+    position: relative;
+    margin-top: -2px;
+    color: #000;
+    text-decoration: none;
+
+    @media screen and (min-width: 768px) {
+      border-top: 2px solid #e9e9e9;
+      padding: 22px 52px 22px 0 !important;
+    }
+  }
+
+  .hubble-pd-expand__opener-name {
+    font-size: 4.44444444vw !important;
+    line-height: 1.375;
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      font-size: 22px !important;
+      line-height: 1.364;
+    }
+  }
+
+  .hubble-pd-expand__opener-icon {
+    position: absolute;
+    top: 50%;
+    right: 7.5vw !important;
+    width: 5vw !important;
+    height: 5vw !important;
+    transform: translateY(-50%) !important;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      background-color: #000;
+      top: 50%;
+    }
+
+    &:before {
+      left: calc(50% - 3px);
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      left: calc(50% + 3px);
+      transform: rotate(-45deg);
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 22px !important;
+      height: 22px !important;
+      right: 7px !important;
+    } 
+  }
+}
