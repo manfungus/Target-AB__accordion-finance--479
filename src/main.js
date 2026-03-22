@@ -1,4 +1,7 @@
 import Accordion from "./js/components/Accordion";
+import ComparisonTable from "./js/components/ComparisonTable.js";
+
+import './css/styles.scss';
 
 if (import.meta.env.DEV) {
   import("./js/baseFunctions.js")
@@ -26,8 +29,13 @@ const financeAccordions = () => {
   }
 
   const addElements = () => {
-    document.querySelector('#downBoxHtml .hubble-pd-expand:nth-child(2)').after(Accordion('test123', 'test456', false));
+    document.querySelector('#downBoxHtml .hubble-pd-expand:nth-child(2)').after(
+      Accordion('Compare the models', ComparisonTable(), false)
+    );
     
+    document.querySelector('#downBoxHtml .hubble-pd-expand:nth-child(4)').after(
+      Accordion('test1238', 'test456', true)
+    );
   }
 }
 

@@ -2,7 +2,6 @@ let Accordion = (title, value, isOpen = false) => {
   console.log('TEST HERE 9')
 
   let accordion = document.createElement('section');
-  accordion.classList.add('hubble-pd-expand', 'bc-feature-faq-wrap', 'bc-feturefaqcomponent0');
 
   isOpen ? accordion.classList.add('opti-accordion', 'opti-accordion--open') : accordion.classList.add('opti-accordion');
 
@@ -14,10 +13,16 @@ let Accordion = (title, value, isOpen = false) => {
       </span>
     </a>
 
-    <div class="opti-accordion-container">
-      ${value}
-    </div>
+    <div class="opti-accordion-container"></div>
   `
+
+  accordion.querySelector('.opti-accordion-container').append(value)
+
+  accordion.addEventListener("click", () => {
+    console.log(title, 'TEST HERE 10')
+    accordion.classList.toggle('opti-accordion--open')
+  })
+
 
   return accordion
 };
