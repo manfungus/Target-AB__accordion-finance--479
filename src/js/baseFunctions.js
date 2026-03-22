@@ -17,7 +17,7 @@ function events() {
       e.target.closest('.hubble-pd-expand').classList.toggle('is-opened')
       e.target.closest('.hubble-pd-expand').classList.toggle('is-opened-active')
     });
-}
+  }
 }
 
 baseFunctions()
