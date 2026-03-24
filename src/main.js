@@ -14,7 +14,6 @@ const financeAccordions = () => {
       // events()
       resetHandles();
       addElements();
-      console.log('TEST HERE 01')
       clearInterval(elementExists);
     }
   }, 1000)
@@ -30,11 +29,11 @@ const financeAccordions = () => {
 
   const addElements = () => {
     document.querySelector('#downBoxHtml .hubble-pd-expand:nth-child(2)').after(
-      Accordion('Compare the models', ComparisonTable(), false)
+      Accordion('Compare the models', ComparisonTable(), true)
     );
     
     document.querySelector('#downBoxHtml .hubble-pd-expand:nth-child(4)').after(
-      Accordion('test1238', 'test456', true)
+      Accordion('test1238', 'test456', false)
     );
   }
 }

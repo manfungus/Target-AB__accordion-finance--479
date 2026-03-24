@@ -1,5 +1,4 @@
 let Accordion = (title, value, isOpen = false) => {
-  console.log('TEST HERE 9')
 
   let accordion = document.createElement('section');
 
@@ -18,7 +17,7 @@ let Accordion = (title, value, isOpen = false) => {
 
   accordion.querySelector('.opti-accordion-container').append(value)
 
-  accordion.addEventListener("click", () => {
+  accordion.querySelector('.opti-accordion-handle').addEventListener("click", () => {
     console.log(title, 'TEST HERE 10')
     accordion.classList.toggle('opti-accordion--open')
   })
