@@ -12,10 +12,24 @@ let ComparisonTable = () => {
   let DropDown = (index) => {
 
     let dropDown = document.createElement('ul');
+    dropDown.classList.add('opti-comparisonCard__header-dropdown-selection')
 
     data.map((item, index) => {
       const li = document.createElement('li');
-      li.textContent = item.model;
+      li.innerHTML = `<a href="#">${item.model}</a>`;
+
+      li.querySelector('a').addEventListener('click', (e) => {
+        e.preventDefault()
+
+        let target = e.target.closest('.opti-comparisonCard__wapper');
+
+        target.querySelector('.opti-comparisonCard').remove();
+        target.querySelector('.opti-comparisonCard__header-title').innerHTML = item.model
+        target.append(ComparisonTableCard(item))
+        
+        target.querySelector('.opti-comparisonCard__header-dropdown-selection').classList.remove('opti-comparisonCard__header-dropdown-selection--open')
+        target.querySelector('.opti-comparisonCard__header-title').classList.remove('opti-comparisonCard__header-title--open')
+      })
 
       dropDown.append(li)
     });
@@ -32,8 +46,10 @@ let ComparisonTable = () => {
     modelTitle.classList.add('opti-comparisonCard__header-title')
     modelTitle.innerHTML = item.model;
 
-    modelTitle.addEventListener('click', () => {
-      console.log('test')
+    modelTitle.addEventListener('click', (e) => {
+      e.target.classList.toggle('opti-comparisonCard__header-title--open')
+      e.target.nextElementSibling.classList.toggle('opti-comparisonCard__header-dropdown-selection--open')
+      
     })
 
     header.append(modelTitle);
@@ -53,20 +69,6 @@ let ComparisonTable = () => {
       
     }
   })
-
-  
-
-
-  // comparisonTable.innerHTML = `<div><div>${model0.model}</div> <button class="test">test</button></div>`;
-
-  // console.log(data, 'TEST HERE')
-
-  // comparisonTable.querySelector('.test').addEventListener('click', () => {
-  //   console.log('test here 098')
-  //   model0 = data[1]
-
-  //   console.log(model0, 'test here 765')
-  // })  
 
   return comparisonTable;
 };
