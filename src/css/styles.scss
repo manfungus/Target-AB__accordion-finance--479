@@ -16,5 +16,20 @@
     text-decoration: none;
     padding: 2.5vw 6.38888889vw;
     font-size: 2.444444vw;
+
+    &:focus,
+    &:active {
+      border: 2px dotted #000;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.444444vw;;
+      padding: 1.4vw 3vw;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
   }
 }
