@@ -17,8 +17,9 @@ let Accordion = (title, value, isOpen = false) => {
 
   accordion.querySelector('.opti-accordion-container').append(value)
 
-  accordion.querySelector('.opti-accordion-handle').addEventListener("click", () => {
+  accordion.querySelector('.opti-accordion-handle').addEventListener("click", (e) => {
     console.log(title, 'TEST HERE 10')
+    e.preventDefault()
     accordion.classList.toggle('opti-accordion--open')
   })
 

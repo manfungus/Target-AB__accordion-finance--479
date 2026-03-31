@@ -1,5 +1,6 @@
 import Accordion from "./js/components/Accordion";
 import ComparisonTable from "./js/components/ComparisonTable.js";
+import Finance from "./js/components/Finance.js";
 
 import './css/styles.scss';
 
@@ -33,7 +34,7 @@ const financeAccordions = () => {
     );
     
     document.querySelector('#downBoxHtml .hubble-pd-expand:nth-child(4)').after(
-      Accordion('test1238', 'test456', false)
+      Accordion('Finance', Finance(), false)
     );
   }
 }

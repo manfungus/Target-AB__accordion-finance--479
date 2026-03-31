@@ -5,6 +5,14 @@ AB test on buypages, insert addition finance options within the FAQ accordions a
 
 Once built the code will be inserted on Adobe Target and monitor activities during the time period between the control and the test.
 
+Within this project there it consists of modules:
+- Finance 
+- Comparison Table
+- Devlivery
+- Contracts
+- Trade in
+- Price Promise
+
 ## Build
 - `yarn init`
 - `yarn dev`
