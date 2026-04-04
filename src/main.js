@@ -34,7 +34,7 @@ const financeAccordions = () => {
     );
     
     document.querySelector('#downBoxHtml .hubble-pd-expand:nth-child(4)').after(
-      Accordion('Finance', Finance(), false)
+      Accordion('Finance', Finance(), true)
     );
   }
 }

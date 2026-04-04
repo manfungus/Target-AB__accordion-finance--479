@@ -1,0 +1,71 @@
+.opti-panel-card {
+  background-color: #f8f8f8;
+  margin: 2%;
+  padding: 5%;
+  width: 86%;
+
+  @media screen and (min-width: 768px) {
+    padding: 5% 2%;
+  }
+  
+  .opti-panel-card__image-container {
+    margin-bottom: 2.60417vw;
+    height: 13.02083vw;;
+    
+    @media screen and (min-width: 768px) {
+      height: 4.51389vw;
+      margin-bottom: 1.38889vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      height: 65px;
+      margin-bottom: 20px;
+    }
+
+    .opti-panel-card__image {
+      width: auto;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__title-container {
+    margin: 0 5.20833vw 2.60417vw;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 auto 1.38889vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 3.47222vw;
+    
+    @media screen and (min-width: 768px) {
+      font-size: 1.11111vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 16px;
+    }
+  }
+
+  &__description {
+    font-size: 2.4444444vw;
+    
+    @media screen and (min-width: 768px) {
+      font-size: 1.11111vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 16px;
+    }
+  }
+
+  .opti-selected__retailers__btn {
+    color: #2189ff;
+  }
+}
