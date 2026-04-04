@@ -1,6 +1,7 @@
 import Accordion from "./js/components/Accordion";
 import ComparisonTable from "./js/components/ComparisonTable.js";
 import Finance from "./js/components/Finance.js";
+import TradeIn from "./js/components/TradeIn.js";
 
 import './css/styles.scss';
 
@@ -36,6 +37,17 @@ const financeAccordions = () => {
     document.querySelector('#downBoxHtml .hubble-pd-expand:nth-child(4)').after(
       Accordion('Finance', Finance(), true)
     );
+
+    const AccordionExists = setInterval(() => {
+      if (document.querySelector('.opti-financeOptions')) {
+        document.querySelector('.opti-financeOptions').closest('.opti-accordion').after(
+          Accordion('Trade In', TradeIn(), true)
+        );
+        clearInterval(AccordionExists);
+      }
+    }, 1000)
+    
+    
   }
 }
 

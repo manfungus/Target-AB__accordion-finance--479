@@ -1,7 +1,7 @@
 
 # AB Test Finance Accordion
 
-AB test on buypages, insert addition finance options within the FAQ accordions and offers, to upsell the product(s).
+AB test on buypages, insert addition finance options within the FAQ accordions and offers, to upsell the product(s). Combination of other accodions projects.
 
 Once built the code will be inserted on Adobe Target and monitor activities during the time period between the control and the test.
 
