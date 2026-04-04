@@ -1,0 +1,40 @@
+{
+  "intro" : "We deliver Monday to Sunday, between 8am and 6pm. Simply choose your preferred delivery options at checkout. COVID-19 may affect our delivery and returns procedures. <a target='_blank' href='https://www.samsung.com/uk/support/contact/#covid'>Check the latest information</a>.",
+  "leftColTitle" : "Free with all purchases",
+  "rightColTitle" : "Premium options",
+  "purchase" : [
+    {
+      "title" : "Next day delivery",
+      "description" : "All items are eligible for free next day delivery to the UK mainland (not at a specified time), 7 days a week. Currently, we are unable to offer delivery to Northern Ireland, the Channel Islands or Scottish Islands. Please note that COVID-19 may affect our delivery options. <a target='_blank' href='https://www.samsung.com/uk/support/contact/#covid'>Check the latest information</a>"
+    },
+    {
+      "title" : "Selected day delivery",
+      "description" : "Choose the day your delivery will arrive. Available to the UK mainland, Monday to Saturday, free of charge. Currently we are unable to offer delivery to Northern Ireland, the Channel Islands or Scottish Islands. Please note that COVID-19 may affect our delivery options. <a target='_blank' href='https://www.samsung.com/uk/support/contact/#covid'>Check the latest information</a>"
+    },
+    {
+      "title" : "Click & Collect",
+      "description" : "Smaller products can be collected from our Samsung KX store in London. This option is only available for customers with a valid postcode within a 30-mile radius of the store."
+    },
+    {
+      "title" : "14-day returns",
+      "description" : "You may return your products for any reason, free of charge, within 14 days of delivery. Simply call 0330 726 7467 to arrange for your item(s) to be collected. If you no longer have the returns slip that was delivered with your item, our Customer Services team can email you another copy. Due to circumstances beyond our control, we are currently unable to offer self-service returns. Please note that COVID-19 may affect our return procedure. <a target='_blank' href='https://www.samsung.com/uk/support/contact/#covid'>Check the latest information</a>"
+    },
+    {
+      "title" : "Faulty items",
+      "description" : "If your product is faulty and you <a target='_blank' href='https://www.samsung.com/uk/support/contact/#shop-support'>notify us</a> within 14 days of delivery, you can either have your product repaired or receive a refund."
+    }
+  ],
+  "premium" : [
+    {
+      "title" : "Same day delivery",
+      "description" : "Available for smaller items and in selected mainland UK postcodes only, Monday to Friday. Orders must be placed by 12pm (midday). Please note that COVID-19 may affect our delivery options. <a target='_blank' href='https://www.samsung.com/uk/support/contact/#covid'>Check the latest information</a>",
+      "cost" : "£9.99"
+    },
+    {
+      "title" : "Timed delivery",
+      "description" : "Choose a specific time slot for your delivery. Available to the UK mainland, Monday to Saturday. Currently, we are unable to offer delivery to Northern Ireland, the Channel Islands or Scottish Islands. Please note that COVID-19 may affect our standard delivery options. <a target='_blank' href='https://www.samsung.com/uk/support/contact/#covid'>Check the latest information</a>",
+      "cost" : "£3.99"
+    }
+  ],
+  "faq" : "For more information, please visit the <a target='_blank' href='https://www.samsung.com/uk/shop-faq/delivery-and-installations/'>delivery and installations</a> or <a target='_blank' href='https://www.samsung.com/uk/shop-faq/returns-and-cancellations/'>returns and cancellations</a> pages of our Online Shop FAQs, as required."
+}

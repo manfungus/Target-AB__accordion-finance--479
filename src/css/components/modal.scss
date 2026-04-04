@@ -93,6 +93,10 @@
 
   &.opti-modal.modal-selected-stores {
 
+    a {
+      color: #000;
+    }
+
     .opti-modal__container {
       max-width: 640px;
 

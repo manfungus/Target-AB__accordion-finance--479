@@ -3,6 +3,7 @@ import ComparisonTable from "./js/components/ComparisonTable.js";
 import Finance from "./js/components/Finance.js";
 import TradeIn from "./js/components/TradeIn.js";
 import PricePromise from './js/components/PricePromise.js';
+import Delivery from "./js/components/Delivery.js";
 
 import './css/styles.scss';
 
@@ -42,7 +43,7 @@ const financeAccordions = () => {
     let financeOptionsExists = setInterval(() => {
       if (document.querySelector('.opti-financeOptions')) {
         document.querySelector('.opti-financeOptions').closest('.opti-accordion').after(
-          Accordion('Trade In', TradeIn(), true)
+          Accordion('Trade In', TradeIn(), false)
         );
         clearInterval(financeOptionsExists);
       }
@@ -51,13 +52,15 @@ const financeAccordions = () => {
     let tradeInExists = setInterval(() => {
       if (document.querySelector('.opti-tradeIn')) {
         document.querySelector('.opti-tradeIn').closest('.opti-accordion').after(
-          Accordion('Price Promise', PricePromise(), true)
+          Accordion('Price Promise', PricePromise(), false)
         );
         clearInterval(tradeInExists);
       }
     }, 1000)
     
-    
+    document.querySelector('#downBoxHtml .hubble-pd-expand:nth-child(6)').after(
+      Accordion('Delivery & returns', Delivery(), true)
+    );
   }
 }
 

@@ -1,0 +1,113 @@
+.opti-delivery-accordion {
+  padding: 0 2%;
+
+  a {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  .opti-delivery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vw;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      margin-top: 2vw;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 1440px) {
+      margin-top: 30px;
+    }
+
+    .opti-delivery__column {
+      width: 100%;
+
+      @media (min-width: 768px) {
+        width: 48%;
+      }
+
+      .opti-delivery__column-item {
+        margin-bottom: 5vw;
+
+        @media (min-width: 768px) {
+          margin-bottom: 2vw;
+        }
+
+        @media (min-width: 1440px) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .opti-delivery__right-col {
+      display: flex;
+
+      .opti-delivery__column-content {
+        width: 90%;
+      }
+
+      .opti-delivery__column-cost {
+        width: 10%;
+        font-weight: 700;
+        text-align: right;
+      }
+    }
+  }
+
+  .opti-accordion-paragraph,
+  .opti-delivery__column-description,
+  .opti-delivery__column-cost {
+    font-size: 2.60417vw;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.11111111vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 14px;
+    }
+  }
+
+  .opti-delivery__column-description {
+    color: #000;
+  }
+
+  .opti-accordion-paragraph {
+    &--intro {
+      margin-top: 1em;
+    }
+  }
+    
+  .opti-delivery__column-title {
+    font-size: 4.94792vw;
+    margin-bottom: 3vw;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.94444vw;
+      margin-bottom: 1.5vw;
+    }
+    
+    @media screen and (min-width: 1440px) {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .opti-delivery__column-subtitle {
+    font-size: 4.16667vw;
+    font-weight: 700;
+    margin-bottom: 2vw;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.25vw;
+      margin-bottom: 1vw;
+    }
+    
+    @media screen and (min-width: 1440px) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+}
