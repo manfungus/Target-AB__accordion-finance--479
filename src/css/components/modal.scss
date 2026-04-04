@@ -1,0 +1,155 @@
+.opti-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 9999;
+  max-height: 100%;
+  overflow: scroll;
+
+  &:-webkit-scrollbar {
+    display: none;
+  }
+
+  .opti-modal__container {
+    background-color: #fff;
+    width: 100%;
+    padding: 9vw 5.55555556vw;
+    position: relative;
+    border-radius: 5.55555556vw;
+
+    @media screen and (min-width: 768px) {
+      border-radius: 25px;
+      padding: 32px;
+    }
+
+    .opti-modal-selectedStores__intro {
+      font-size: 3.33333333vw;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.11111vw;
+      }
+  
+      @media screen and (min-width: 1440px) {
+        font-size: 16px;
+      }
+    }
+
+    .opti-modal__close {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      width: 25px;
+      height: 25px;
+
+      &:before,
+      &:after {
+        content: '';
+        height: 2px;
+        width: 20px;
+        background-color: #000;
+        display: block;
+        position: absolute;
+      }
+
+      &:before {
+        top: 11px;
+        left: 2px;
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        top: 11px;
+        left: 2px;
+        transform: rotate(-45deg);
+      }
+      
+      .opti-modal__close-visual {
+        text-indent: -99999999px;
+        position: absolute;
+      }
+    }
+
+    &--transparent {
+      background-color: transparent;
+
+      .opti-modal__close { 
+        top: -10px; 
+
+        &:before,
+        &:after {
+          background-color: #fff;
+        }
+      } 
+    }
+  }
+
+  // Selected Store modal
+
+  &.opti-modal.modal-selected-stores {
+
+    .opti-modal__container {
+      max-width: 640px;
+
+      .opti-modal-selectedStores__title {
+        font-size: 5vw;
+
+        @media screen and (min-width: 768px) {
+          font-size: 27px;
+        }
+      }
+
+      .opti-modal-selectedStores__title,
+      .opti-modal-selectedStores__intro {
+        margin-bottom: 3vw;
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: 15px;
+        }
+      }
+
+      .opti-modal-selectedStores__list {
+        .opti-modal-selectedStores__list-item {
+          display: flex;
+          flex-direction: row;
+          border-bottom: 1px solid #e9e9e9;
+          padding: 10px 0;
+    
+          .opti-modal-selectedStores__company-name,
+          .opti-modal-selectedStores__company-link {
+            width: 50%;
+            font-size: 3.33333333vw;
+            overflow-wrap: break-word;
+    
+            @media screen and (min-width: 768px) {
+              font-size: 1.11111vw;
+            }
+        
+            @media screen and (min-width: 1440px) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.opti-modal-tradeInVideoModal {
+  text-align: center;
+  
+  .opti-youtube-video {
+    width: 100%;
+    height: 46.9vw;
+  
+    @media screen and (min-width: 768px) {
+      width: 640px;
+      height: 390px;
+    }
+  }
+}
