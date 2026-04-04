@@ -39,22 +39,6 @@ const TradeIn = () => {
     </div>
   `;
 
-  // add video modal from prod
-
-  // let checkTargetExist = setInterval(function () {
-  //   let target = document.querySelector(".tariff-accordian__see-more");
-
-  //   if (target) {
-  //     $(".opti-panels-trade-in-cta").on("click", (e) => {
-  //       e.preventDefault();
-
-  //       // 
-  //     });
-
-  //     clearInterval(checkTargetExist);
-  //   }
-  // }, 1000);
-
   TradeInData.panels
     .map((data) => {
       tradeIn

@@ -1,0 +1,58 @@
+{
+  "selectedRetailers": {
+    "title" : "Selected Retailers",
+    "intro" : "Buy any qualifying product from Samsung.com, and if you find it cheaper at any of the selected retailers below, you can claim back the difference within 7 days of purchase. <a href='https://2021.samsungpromotions.claims/pricepromise/en-GB/qualifying'>Terms and conditions apply</a>",
+    "retailers" : [
+      {
+        "company"         : "AO",
+        "companyURL"      : "https://www.ao-mobile.com",
+        "companyURLText"  : "ao-mobile.com"
+      },
+      {
+        "company"         : "AO Mobile",
+        "companyURL"      : "https://www.ao-mobile.com",
+        "companyURLText"  : "ao-mobile.com"
+      },
+      {
+        "company"         : "AO Mobile Phones Direct",
+        "companyURL"      : "https://www.mobilephonesdirect.co.uk",
+        "companyURLText"  : "www.mobilephonesdirect.co.uk"
+      },
+      {
+        "company"         : "Argos",
+        "companyURL"      : "https://www.argos.co.uk",
+        "companyURLText"  : "www.argos.co.uk"
+      },
+      {
+        "company"         : "Carphone Warehouse",
+        "companyURL"      : "https://www.carphonewarehouse.com",
+        "companyURLText"  : "www.carphonewarehouse.com"
+      },
+      {
+        "company"         : "Currys PC World",
+        "companyURL"      : "https://www.currys.co.uk/gbuk/index.html",
+        "companyURLText"  : "www.currys.co.uk/gbuk/"
+      },
+      {
+        "company"         : "John Lewis",
+        "companyURL"      : "https://www.johnlewis.com",
+        "companyURLText"  : "www.johnlewis.com"
+      },
+      {
+        "company"         : "Richer Sounds",
+        "companyURL"      : "https://www.richersounds.com",
+        "companyURLText"  : "www.richersounds.com"
+      },
+      {
+        "company"         : "Samsung.com",
+        "companyURL"      : "https://www.samsung.com/uk",
+        "companyURLText"  : "www.samsung.com/uk"
+      },
+      {
+        "company"         : "Very",
+        "companyURL"      : "https://www.very.co.uk",
+        "companyURLText"  : "www.very.co.uk"
+      }
+    ]
+  }
+}

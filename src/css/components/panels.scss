@@ -1,5 +1,6 @@
 .opti-financeOptions,
-.opti-tradeIn {
+.opti-tradeIn,
+.opti-pricePromise {
   text-align: center;
 
   .opti-panels-accordion {
@@ -20,7 +21,8 @@
     }
   
     &__paragraph,
-    &__link {
+    &__link,
+    .opti-panels-learn-more {
       font-size: 2.4444444vw;
       text-align: center;
 
@@ -46,7 +48,7 @@
         margin: 20px 0;
       }
     }
-
+    
     &__disclaimer {
       display: block;
       margin-top: 7%;
@@ -61,6 +63,14 @@
       @media screen and (min-width: 1024px) {
         font-size: 13px;
         margin-top: 20px;
+      }
+
+      &--align-left {
+        text-align: left;
+      }
+
+      a {
+        color: #000;
       }
     }
 
@@ -102,6 +112,12 @@
       font-weight: 700;
       text-transform: uppercase;
       line-height: 1;
+    }
+  }
+
+  .opti-panels-learn-more__container {
+    .opti-panels-learn-more {
+      color: #000;
     }
   }
 }

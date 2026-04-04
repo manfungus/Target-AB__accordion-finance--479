@@ -2,6 +2,7 @@ import Accordion from "./js/components/Accordion";
 import ComparisonTable from "./js/components/ComparisonTable.js";
 import Finance from "./js/components/Finance.js";
 import TradeIn from "./js/components/TradeIn.js";
+import PricePromise from './js/components/PricePromise.js';
 
 import './css/styles.scss';
 
@@ -38,12 +39,21 @@ const financeAccordions = () => {
       Accordion('Finance', Finance(), true)
     );
 
-    const AccordionExists = setInterval(() => {
+    let financeOptionsExists = setInterval(() => {
       if (document.querySelector('.opti-financeOptions')) {
         document.querySelector('.opti-financeOptions').closest('.opti-accordion').after(
           Accordion('Trade In', TradeIn(), true)
         );
-        clearInterval(AccordionExists);
+        clearInterval(financeOptionsExists);
+      }
+    }, 1000)
+
+    let tradeInExists = setInterval(() => {
+      if (document.querySelector('.opti-tradeIn')) {
+        document.querySelector('.opti-tradeIn').closest('.opti-accordion').after(
+          Accordion('Price Promise', PricePromise(), true)
+        );
+        clearInterval(tradeInExists);
       }
     }, 1000)
     
